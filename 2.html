@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Pedido - Tienda Apple</title>
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <h1>Tienda Apple</h1>
+        <p>Formulario de Pedido</p>
+    </header>
+
+    <hr>
+
+    <!-- BARRA DE NAVEGACION -->
+    <nav>
+        <a href="1.html">Catálogo de Productos</a> | 
+        <a href="2.html">Formulario de Pedido</a>
+    </nav>
+
+    <hr>
+
+    <!-- CUERPO PRINCIPAL -->
+    <main>
+        <h2>Realiza tu Pedido</h2>
+
+        <form action="#" method="post">
+            
+            <label for="nombre">Nombre Completo:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="email">Correo Electrónico:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="telefono">Teléfono de Contacto:</label><br>
+            <input type="tel" id="telefono" name="telefono"><br><br>
+
+            <label for="producto">Selecciona el Producto:</label><br>
+            <select id="producto" name="producto" required>
+                <option value="">-- Elige un producto --</option>
+                <optgroup label="iPhones">
+                    <option value="iphone-16-pro">iPhone 16 Pro</option>
+                    <option value="iphone-16">iPhone 16</option>
+                </optgroup>
+                <optgroup label="iPads">
+                    <option value="ipad-pro">iPad Pro</option>
+                    <option value="ipad-air">iPad Air</option>
+                </optgroup>
+                <optgroup label="Macs">
+                    <option value="macbook-pro">MacBook Pro</option>
+                    <option value="macbook-air">MacBook Air</option>
+                </optgroup>
+                <optgroup label="Apple Watch">
+                    <option value="watch-series-10">Apple Watch Series 10</option>
+                    <option value="watch-ultra-2">Apple Watch Ultra 2</option>
+                </optgroup>
+            </select><br><br>
+
+            <label for="cantidad">Cantidad:</label><br>
+            <input type="number" id="cantidad" name="cantidad" min="1" max="10" value="1"><br><br>
+
+            <label for="comentarios">Comentarios o Dirección de Envío:</label><br>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="40"></textarea><br><br>
+
+            <button type="submit">Enviar Pedido</button>
+            <button type="reset">Limpiar Formulario</button>
+
+        </form>
+    </main>
+
+    <hr>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Tienda Apple. Todos los derechos reservados.</p>
+        <p>Contacto: soporte@tiendaapple.com</p>
+    </footer>
+
+</body>
+</html>
